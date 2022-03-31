@@ -1,0 +1,158 @@
+<!-- saved from url=(0032)https://y5generator.netlify.app/ -->
+<html>
+  <head>
+    <title>NFT Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+
+  <header class="header header-gradient">
+      <span>NFT GENERATOR</span>
+    </header>
+
+    <section class="d-flex">
+
+      
+      <div class="slidecontainer">
+
+        <input
+         onchange="chooseBackground();"
+          type="range"
+          min="0"
+          max="2"
+          value="0"
+          class="slider"
+          id="backgroundVariant"
+      />
+      <p class="slider-text">Background</p>
+      <br />
+
+        <input
+          onchange="chooseBark();"
+          type="range"
+          min="0"
+          max="0"
+          value="0"
+          class="slider"
+          id="barkVariant"
+        />
+        <p class="slider-text">Bark</p>
+        <br />
+
+        <input
+          onchange="chooseOutfit();"
+          type="range"
+          min="0"
+          max="1"
+          value="0"
+          class="slider"
+          id="outfitVariant"
+        />
+        <p class="slider-text">Outfit</p>
+        <br />
+
+        <input
+          onchange="chooseHead();"
+          type="range"
+          min="0"
+          max="2"
+          value="0"
+          class="slider"
+          id="headVariant"
+        />
+        <p class="slider-text">Head</p>
+        <br />
+
+        <input
+        onchange="chooseFace();"
+        type="range"
+        min="0"
+        max="1"
+        value="0"
+        class="slider"
+        id="faceVariant"
+      />
+      <p class="slider-text">Face</p>
+      <br />
+      
+      <input
+      onchange="chooseEyebrows();"
+      type="range"
+      min="0"
+      max="5"
+      value="0"
+      class="slider"
+      id="eyebrowsVariant"
+      />
+      <p class="slider-text">Eyebrows</p>
+      <br />
+
+      </div>
+      <div>
+
+        <img
+        id="background"
+        class="imgAccessory"
+        src="./Backgrounds/1.svg"
+        alt="background image"
+      />
+
+      <img
+        id="back"
+        class="imgAccessory"
+        src="./Back/1.svg"
+        alt="head decoration"
+      />
+
+        <img
+        id="bark"
+        class="imgAccessory"
+        src="./Barks/1.svg"
+        alt="skin tone"
+      />
+
+      <img
+        id="eyebrows"
+        class="imgAccessory"
+        src="./Eyebrows/1.svg"
+        alt="expression"
+    />
+
+        <img
+        id="outfit"
+        class="imgAccessory"
+        src="./Outfits/1.svg"
+        alt="clothing"
+      />
+
+      <img
+        id="face"
+        class="imgAccessory"
+        src="./Face/1.svg"
+        alt="head decoration"
+      />
+
+      <img
+        id="head"
+        class="imgAccessory"
+        src="./Head/1.svg"
+        alt="head decoration"
+      />
+
+=
+      </div>
+      <div>
+        <button
+          id="Mint"
+          class="mintButton btn"
+          onclick="mintMachine();randomize()"
+        >
+          <span>Mint</span>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
