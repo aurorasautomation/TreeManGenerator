@@ -127,6 +127,94 @@ function chooseBack() {
     "./Back/" + backVariants[chosenBack] + ".svg";
 }
 
+function randomName() {
+  let firstNameGiven = Math.floor(Math.random() * 20);
+  let lastNameGiven = Math.floor(Math.random() * 20);
+  let AdjNameGiven = Math.floor(Math.random() * 15);
+  let NounNameGiven = Math.floor(Math.random() * 15);
+  let backWhatever = Math.floor(Math.random() * 2);
+  let barkWhatever = Math.floor(Math.random() * 1);
+  let eyebrowsWhatever = Math.floor(Math.random() * 6);
+  let faceWhatever = Math.floor(Math.random() * 2);
+  let outfitWhatever = Math.floor(Math.random() * 2);
+  let backgroundWhatever = Math.floor(Math.random() * 3);
+  document.getElementById("characterName").innerHTML =
+    FirstName[firstNameGiven] +
+    " " +
+    NameAdj[AdjNameGiven] +
+    " " +
+    NameNoun[NounNameGiven] +
+    " " +
+    LastName[lastNameGiven];
+  document.getElementById("background").src =
+    "./Backgrounds/" + backgroundColours[backgroundWhatever] + ".svg";
+  document.getElementById("hat").src =
+    "./HatRecolor/" + hatColours[backWhatever] + ".svg";
+  document.getElementById("skinColor").src =
+    "./SkinRecolor/" + skinColours[eyebrowsWhatever] + ".svg";
+  document.getElementById("Glasses").src =
+    "./Sunglasses+Recolor/" + glassesColours[barkWhatever] + ".svg";
+  document.getElementById("waistCoat").src =
+    "./WaistcoatRecolor/" + waistColours[faceWhatever] + ".svg";
+  document.getElementById("Rings").src =
+    "./RingRecolor/" + ringColours[outfitWhatever] + ".svg";
+}
+function randomize() {
+  let backWhatever = Math.floor(Math.random() * 2);
+  let barkWhatever = Math.floor(Math.random() * 1);
+  let eyebrowsWhatever = Math.floor(Math.random() * 6);
+  let faceWhatever = Math.floor(Math.random() * 2);
+  let outfitWhatever = Math.floor(Math.random() * 2);
+  let backgroundWhatever = Math.floor(Math.random() * 3);
+
+  document.getElementById("background").src =
+    "./Backgrounds/" + backgroundColours[backgroundWhatever] + ".svg";
+  document.getElementById("hat").src =
+    "./HatRecolor/" + hatColours[backWhatever] + ".svg";
+  document.getElementById("skinColor").src =
+    "./SkinRecolor/" + skinColours[eyebrowsWhatever] + ".svg";
+  document.getElementById("Glasses").src =
+    "./Sunglasses+Recolor/" + glassesColours[barkWhatever] + ".svg";
+  document.getElementById("waistCoat").src =
+    "./WaistcoatRecolor/" + waistColours[faceWhatever] + ".svg";
+  document.getElementById("Rings").src =
+    "./RingRecolor/" + ringColours[outfitWhatever] + ".svg";
+}
+
+function calcTotalNumberOfVariance() {
+  const LastName = [
+    "Messi",
+    "Ronaldo",
+    "Pillay",
+    "Verstappen",
+    "Hamilton",
+    "Norris",
+    "LeClerc",
+    "Sainz",
+    "Perez",
+    "Button",
+    "Kane",
+    "Salah",
+    "Sterling",
+    "Sancho",
+    "Smith",
+    "Jones",
+    "Williams",
+    "Taylor",
+    "Davies",
+    "Brown",
+  ];
+  document.getElementById("totalNumberOfVariants").innerHTML =
+    backVariants.length *
+    backgroundVariants.length *
+    barkVariants.length *
+    outfitVariants.length *
+    faceVariants.length *
+    headVariants.length *
+    FirstName.length *
+    LastName.length;
+}
+
 function mintMachine() {
   console.log("Minting button has been pressed");
 }
