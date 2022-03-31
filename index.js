@@ -121,6 +121,12 @@ function chooseEyebrows() {
     "./Eyebrows/" + eyebrowVariants[chosenEyebrows] + ".svg";
 }
 
+function chooseBack() {
+  let chosenBack = document.getElementById("backVariant").value;
+  document.getElementById("back").src =
+    "./Back/" + backVariants[chosenBack] + ".svg";
+}
+
 function mintMachine() {
   console.log("Minting button has been pressed");
 }
